@@ -67,10 +67,6 @@ var clone = function(fn) {
     return fn.bind({});
 };
 
-var useUrlArg = function (fileArg, urlArg) {
-    return urlArg !== undefined;
-};
-
 if(require.main == module) {
     program
         .option('-c, --checks <check_file>', 'Path to checks.json', clone(assertFileExists), CHECKSFILE_DEFAULT)
@@ -79,20 +75,22 @@ if(require.main == module) {
         .parse(process.argv);
 
     /* User can pass in a <file> or <url> argument. If both are present, <url> takes precedence and <file> is ignored. */
-    if (useUrlArg(program.file, program.url)) {
-        rest.get(program.url).on('error', function (err, response) {
-            console.log("%s could not be loaded. Please check that the URL exists and returns 200 OK. Exiting.", program.url);
-            process.exit(2);
-        }).on('success', function (data, response) {
-            var checkJson = checkHtmlContent(data, program.checks);
-            var outJson = JSON.stringify(checkJson, null, 4);
-            console.log(outJson);
-        });
-    } else {
+    if (program.url === undefined) {
         var checkJson = checkHtmlFile(program.file, program.checks);
         var outJson = JSON.stringify(checkJson, null, 4);
         console.log(outJson);
+        process.exit(0);
     }
+
+    /* If we've got this far we're checking a URL not a local file */
+    rest.get(program.url).on('error', function (err, response) {
+        console.log("%s could not be loaded. Please check that the URL exists and returns 200 OK. Exiting.", program.url);
+        process.exit(2);
+    }).on('success', function (data, response) {
+        var checkJson = checkHtmlContent(data, program.checks);
+        var outJson = JSON.stringify(checkJson, null, 4);
+        console.log(outJson);
+    });
 
 } else {
     exports.checkHtmlFile = checkHtmlFile;
