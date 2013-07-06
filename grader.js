@@ -46,7 +46,11 @@ var loadChecks = function(checksfile) {
 };
 
 var checkHtmlFile = function(htmlfile, checksfile) {
-    $ = cheerioHtmlFile(htmlfile);
+    return checkHtmlContent(fs.readFileSync(htmlfile), checksfile);
+};
+
+var checkHtmlContent = function(htmlcontent, checksfile) {
+    $ = cheerio.load(htmlcontent);
     var checks = loadChecks(checksfile).sort();
     var out = {};
     for(var ii in checks) {
@@ -55,6 +59,7 @@ var checkHtmlFile = function(htmlfile, checksfile) {
     }
     return out;
 };
+
 
 var clone = function(fn) {
     // Workaround for commander.js issue.
