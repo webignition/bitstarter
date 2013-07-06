@@ -84,7 +84,9 @@ if(require.main == module) {
             console.log("%s could not be loaded. Please check that the URL exists and returns 200 OK. Exiting.", program.url);
             process.exit(2);
         }).on('success', function (data, response) {
-            console.log("!Success", data, response);
+            var checkJson = checkHtmlContent(data, program.checks);
+            var outJson = JSON.stringify(checkJson, null, 4);
+            console.log(outJson);
         });
     } else {
         var checkJson = checkHtmlFile(program.file, program.checks);
