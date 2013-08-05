@@ -1,480 +1,480 @@
 
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <title>Wishlistly Fund Raiser</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://d396qusza40orc.cloudfront.net/startup%2Fcode%2Fbootstrap-combined.no-icons.min.css">
-    <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css">
-    <link rel="stylesheet" href="https://d396qusza40orc.cloudfront.net/startup%2Fcode%2Fsocial-buttons.css">    
-    <script src="https://d396qusza40orc.cloudfront.net/startup%2Fcode%2Fjquery.js"></script>
-    <script src="https://d396qusza40orc.cloudfront.net/startup%2Fcode%2Fbootstrap.js"></script>
-    <link href="http://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700,300italic,400italic,500italic,700italic" rel="stylesheet" type="text/css">
-    <link href="http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,300,400,600,700,800" 
-          rel="stylesheet" type="text/css">
-    <style type="text/css">
+    <head>
+        <meta charset="utf-8">
+        <title>Wishlistly Fund Raiser</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://d396qusza40orc.cloudfront.net/startup%2Fcode%2Fbootstrap-combined.no-icons.min.css">
+        <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css">
+        <link rel="stylesheet" href="https://d396qusza40orc.cloudfront.net/startup%2Fcode%2Fsocial-buttons.css">    
+        <script src="https://d396qusza40orc.cloudfront.net/startup%2Fcode%2Fjquery.js"></script>
+        <script src="https://d396qusza40orc.cloudfront.net/startup%2Fcode%2Fbootstrap.js"></script>
+        <link href="http://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700,300italic,400italic,500italic,700italic" rel="stylesheet" type="text/css">
+        <link href="http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,300,400,600,700,800" 
+              rel="stylesheet" type="text/css">
+        <style type="text/css">
 
-      /* Large desktop */
-      @media (min-width: 980px) { 
-        body {
-         padding-top: 60px;
-        }
-       .linediv-l {
-         border-right: 1px white solid;
-        }
-       .linediv-r {
-         border-left: 1px white solid;
-       }       
-      }
+            /* Large desktop */
+            @media (min-width: 980px) { 
+                body {
+                    padding-top: 60px;
+                }
+                .linediv-l {
+                    border-right: 1px white solid;
+                }
+                .linediv-r {
+                    border-left: 1px white solid;
+                }       
+            }
 
-      /* Landscape phones and down */
-      @media (max-width: 480px) { 
-       .copy {
-         padding: 2.5% 10%;
-       }
-       .linediv-l {
-         border-bottom: 1px white solid;
-       }
-       .linediv-r {
-         border-top: 1px white solid;
-       }
-      }
+            /* Landscape phones and down */
+            @media (max-width: 480px) { 
+                .copy {
+                    padding: 2.5% 10%;
+                }
+                .linediv-l {
+                    border-bottom: 1px white solid;
+                }
+                .linediv-r {
+                    border-top: 1px white solid;
+                }
+            }
 
-      /* All form factors */
+            /* All form factors */
 
-      /* Main body and headings */
-      body{
-        font-family: 'Open Sans', Helvetica, Arial, sans-serif;
-      }
-      .heading, .subheading {
-        font-family: 'Ubuntu', Helvetica, Arial, sans-serif;
-        text-align: center;
-      }
-      p.lead {
-        padding-top: 1.5%;
-        font-size: 24px;
-        line-height: 30px;
-      }
-      p {
-        font-size: 18px;
-        line-height: 24px;
-      }
+            /* Main body and headings */
+            body{
+                font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+            }
+            .heading, .subheading {
+                font-family: 'Ubuntu', Helvetica, Arial, sans-serif;
+                text-align: center;
+            }
+            p.lead {
+                padding-top: 1.5%;
+                font-size: 24px;
+                line-height: 30px;
+            }
+            p {
+                font-size: 18px;
+                line-height: 24px;
+            }
 
-      /* Video pitch and Action */
-      .pitch {
-        padding: 2.5% 0%;
-      }
-      .order {
-        padding: 2% 0%;
-      }
-      .actions {
-        background-color: #343434;
-        padding: 3% 0%;
-      }
-      .video, .thermometer, .order, .social, .statistics {
-        text-align: center;
-      }
-      .statistics h3, .statistics p {
-        color: white;
-      }
+            /* Video pitch and Action */
+            .pitch {
+                padding: 2.5% 0%;
+            }
+            .order {
+                padding: 2% 0%;
+            }
+            .actions {
+                background-color: #343434;
+                padding: 3% 0%;
+            }
+            .video, .thermometer, .order, .social, .statistics {
+                text-align: center;
+            }
+            .statistics h3, .statistics p {
+                color: white;
+            }
 
-      /* Marketing Copy and Footer */
-      .copy {
-        padding-top: 2.5%;
-        padding-bottom: 2.5%;
-        text-align: justify;
-      }
-      .asset {
-        padding: 2.5% 0%;
-      }
-      .footer {
-        color: #cccccc;
-        text-align: center;
-      }
-      .footer p {
-        font-size: 11px;
-      }
-      .footer a {
-        color: #ccccff;
-      }
-      
-      /* Custom styles in addition to supplied template */
-      h1 span {
-          opacity:0.4;
-      }
-      
-      /* Colour palette from http://colorschemedesigner.com/#3B21Tw0w0w0w0 */
-      .pitch-points-wrapper {
-          background-color: #4186d3;
-          color: #fefefe;
-          padding: 20px 0;
-      }
+            /* Marketing Copy and Footer */
+            .copy {
+                padding-top: 2.5%;
+                padding-bottom: 2.5%;
+                text-align: justify;
+            }
+            .asset {
+                padding: 2.5% 0%;
+            }
+            .footer {
+                color: #cccccc;
+                text-align: center;
+            }
+            .footer p {
+                font-size: 11px;
+            }
+            .footer a {
+                color: #ccccff;
+            }
 
-      .pitch-points .lead .icon {
-          margin-left: -26px;
-      }      
-      
-      .pitch-points p {
-          padding-left: 26px;
-      }
-      
-      /* 
-      Generated from http://charliepark.org/bootstrap_buttons/
-      to match scheme colour #ff9a00
-      */
-      .pitch-points .btn {
-        background-color: hsl(36, 100%, 40%) !important;
-        background-repeat: repeat-x;
-        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffad32", endColorstr="#cc7a00");
-        background-image: -khtml-gradient(linear, left top, left bottom, from(#ffad32), to(#cc7a00));
-        background-image: -moz-linear-gradient(top, #ffad32, #cc7a00);
-        background-image: -ms-linear-gradient(top, #ffad32, #cc7a00);
-        background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #ffad32), color-stop(100%, #cc7a00));
-        background-image: -webkit-linear-gradient(top, #ffad32, #cc7a00);
-        background-image: -o-linear-gradient(top, #ffad32, #cc7a00);
-        background-image: linear-gradient(#ffad32, #cc7a00);
-        border-color: #cc7a00 #cc7a00 hsl(36, 100%, 35%);
-        color: #333 !important;
-        text-shadow: 0 1px 1px rgba(255, 255, 255, 0.33);
-        -webkit-font-smoothing: antialiased;          
-      }
-      
-      .pitch-points .btn {
-          margin-left:26px;
-          text-align: left;
-      }
-      
-      .pitch-points .btn span {
-          display:block;
-          margin-top: 6px;
-          font-size: 80%;
-      }
-      
-      .faq p {
-          font-size: 100%;
-      }
-      
-      /*  */
-      @media (max-width: 979px) {
-          .pitch-points .span4 {
-              margin-bottom: 40px;
-          }
-          
-          .pitch-points .span4:last-child {
-              margin-bottom: 10px;
-          }
-          
-        .pitch-points .lead .icon {
-            margin-left: auto;
-            display:none;            
-        }      
+            /* Custom styles in addition to supplied template */
+            h1 span {
+                opacity:0.4;
+            }
 
-        .pitch-points p {
-            padding: 0px 20px;
-        }
-        
-        .pitch-points .btn {
-            display:block;
-            width:80%;
-            margin-left:auto;
-            margin-right:auto;
-        }        
-      }      
-    </style>
-  </head>
-  <body>
+            /* Colour palette from http://colorschemedesigner.com/#3B21Tw0w0w0w0 */
+            .pitch-points-wrapper {
+                background-color: #4186d3;
+                color: #fefefe;
+                padding: 20px 0;
+            }
 
-    <!-- Mobile-friendly navbar adapted from example. -->
-    <!-- http://twitter.github.io/bootstrap/examples/starter-template.html -->
-    <div class="navbar navbar-inverse navbar-fixed-top">
-      <div class="navbar-inner">
+            .pitch-points .lead .icon {
+                margin-left: -26px;
+            }      
+
+            .pitch-points p {
+                padding-left: 26px;
+            }
+
+            /* 
+            Generated from http://charliepark.org/bootstrap_buttons/
+            to match scheme colour #ff9a00
+            */
+            .pitch-points .btn {
+                background-color: hsl(36, 100%, 40%) !important;
+                background-repeat: repeat-x;
+                filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffad32", endColorstr="#cc7a00");
+                background-image: -khtml-gradient(linear, left top, left bottom, from(#ffad32), to(#cc7a00));
+                background-image: -moz-linear-gradient(top, #ffad32, #cc7a00);
+                background-image: -ms-linear-gradient(top, #ffad32, #cc7a00);
+                background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #ffad32), color-stop(100%, #cc7a00));
+                background-image: -webkit-linear-gradient(top, #ffad32, #cc7a00);
+                background-image: -o-linear-gradient(top, #ffad32, #cc7a00);
+                background-image: linear-gradient(#ffad32, #cc7a00);
+                border-color: #cc7a00 #cc7a00 hsl(36, 100%, 35%);
+                color: #333 !important;
+                text-shadow: 0 1px 1px rgba(255, 255, 255, 0.33);
+                -webkit-font-smoothing: antialiased;          
+            }
+
+            .pitch-points .btn {
+                margin-left:26px;
+                text-align: left;
+            }
+
+            .pitch-points .btn span {
+                display:block;
+                margin-top: 6px;
+                font-size: 80%;
+            }
+
+            .faq p {
+                font-size: 100%;
+            }
+
+            /*  */
+            @media (max-width: 979px) {
+                .pitch-points .span4 {
+                    margin-bottom: 40px;
+                }
+
+                .pitch-points .span4:last-child {
+                    margin-bottom: 10px;
+                }
+
+                .pitch-points .lead .icon {
+                    margin-left: auto;
+                    display:none;            
+                }      
+
+                .pitch-points p {
+                    padding: 0px 20px;
+                }
+
+                .pitch-points .btn {
+                    display:block;
+                    width:80%;
+                    margin-left:auto;
+                    margin-right:auto;
+                }        
+            }           
+        </style>
+    </head>
+    <body>
+
+        <!-- Mobile-friendly navbar adapted from example. -->
+        <!-- http://twitter.github.io/bootstrap/examples/starter-template.html -->
+        <div class="navbar navbar-inverse navbar-fixed-top">
+            <div class="navbar-inner">
+                <div class="container">
+                    <button type="button" class="btn btn-navbar"
+                            data-toggle="collapse" data-target=".nav-collapse">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="brand" href="/">Wishlistly</a>
+                    <div class="nav-collapse collapse">
+                        <ul class="nav">
+                            <li class="active"><a href="#">Home</a></li>
+                            <li><a href="#about">About</a></li>
+                            <li><a href="#contact">Contact</a></li>
+                        </ul>
+                    </div><!--/.nav-collapse -->
+                </div>
+            </div>
+        </div>
+
+        <!-- Main heading and subheading -->
         <div class="container">
-          <button type="button" class="btn btn-navbar"
-                  data-toggle="collapse" data-target=".nav-collapse">
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="brand" href="/">Wishlistly</a>
-          <div class="nav-collapse collapse">
-            <ul class="nav">
-              <li class="active"><a href="#">Home</a></li>
-              <li><a href="#about">About</a></li>
-              <li><a href="#contact">Contact</a></li>
-            </ul>
-          </div><!--/.nav-collapse -->
-        </div>
-      </div>
-    </div>
-
-    <!-- Main heading and subheading -->
-    <div class="container">
-      <div class="row-fluid heading">
-        <div class="span12">
-          <h1>Wish<span>List</span>ly</h1>
-        </div>
-      </div> 
-      <div class="row-fluid subheading">
-        <div class="span12">
-          <!-- Special typography from Bootstrap for lead paragraph. -->
-          <!-- http://twitter.github.io/bootstrap/base-css.html#typography -->
-          <p class="lead">Simple, easy, shareable wishlists. Make it happen.</p>
-        </div>
-      </div>
-    </div>
-    
-    <!-- Separate container for pitch points to present a different full-width
-    background -->
-    <div class="pitch-points-wrapper">
-    <div class="container">
-      <div class="row-fluid pitch-points">
-        <div class="span4">
-          <p class="lead">
-              <i class="icon icon-gift"></i>
-               We all have things we want.              
-               And we all have people who buy
-               us gifts.               
-          </p>
-          <p>
-              Christmas gifts, birthday gifts, new baby gifts, graduation gifts,
-              wedding gifts &hellip;
-          </p>
-
-        </div>          
-        <div class="span4">
-          <p class="lead">
-              <i class="icon icon-meh"></i>
-              Ever receive a gift you had no use for? That's a lovely
-              teapot Mum, thanks.
-          </p>            
-          <p>
-              Now what do I need another tea pot for? It's pretty, but
-              what I really wanted was a coffee maker.
-          </p>
-        </div>          
-        <div class="span4">
-            <p class="lead">
-                <i class="icon icon-smile"></i>
-              Let's help each other get the gifts we want. Help
-              make wishlists simply, easy and fun.
-            </p>
-            <a class="btn btn-success btn-large" href='#back'>
-                Back this project! <i class="icon icon-caret-down"></i>
-                <span>
-                    Fund us to secure a share in profits
-                    or pre-order for early access and bonus features.
-                </span>
-            </a>
-        </div>
-      </div>      
-
-    </div>
-    </div>
-    
-    <!-- Third container for the remaining content  -->
-    <div class="container">    
-      <div class="row-fluid pitch">
-        <div class="span5 offset1 video">
-          <img class="img-polaroid" src="http://i.imgur.com/Rj9xnsc.png" alt="Placeholder">
-        </div>
-
-        <!-- We define a new 'actions' div to contain statistics, order, and share buttons.-->
-        <div class="span5 actions">
-            <div class="row-fluid">
-          <div class="span8 offset2">
-            <div class="row-fluid statistics">
-              <div class="span4">
-                <!-- linediv-l and linediv-r give dividing lines that look
-                different in horizontal and vertical layouts, illustrating
-                media queries. -->
-                <div class="linediv-l">
-                <h3>1000</h3> <p>backers</p>
+            <div class="row-fluid heading">
+                <div class="span12">
+                    <h1>Wish<span>List</span>ly</h1>
                 </div>
-              </div>
-              <div class="span4">
-                <div class="linediv-c">
-                  <h3>&pound;6000</h3> <p>of &pound;25,000</p>
+            </div> 
+            <div class="row-fluid subheading">
+                <div class="span12">
+                    <!-- Special typography from Bootstrap for lead paragraph. -->
+                    <!-- http://twitter.github.io/bootstrap/base-css.html#typography -->
+                    <p class="lead">Simple, easy, shareable wishlists. Make it happen.</p>
                 </div>
-              </div>
-              <div class="span4">
-                <div class="linediv-r">
-                <h3>10</h3> <p>days left</p>
-                </div>
-              </div>
             </div>
-          </div>
-          <div class="row-fluid">
-          <div class="span10 offset1">
-            <!-- Bootstrap progress bar -->
-            <!-- http://twitter.github.io/bootstrap/components.html#progress -->
-            <div class="thermometer progress active">
-              <div class="bar bar-success" style="width: 60%;"></div>
-              <div class="bar bar-warning" style="width: 40%;"></div>
+        </div>
+
+        <!-- Separate container for pitch points to present a different full-width
+        background -->
+        <div class="pitch-points-wrapper">
+            <div class="container">
+                <div class="row-fluid pitch-points">
+                    <div class="span4">
+                        <p class="lead">
+                            <i class="icon icon-gift"></i>
+                            We all have things we want.              
+                            And we all have people who buy
+                            us gifts.               
+                        </p>
+                        <p>
+                            Christmas gifts, birthday gifts, new baby gifts, graduation gifts,
+                            wedding gifts &hellip;
+                        </p>
+
+                    </div>          
+                    <div class="span4">
+                        <p class="lead">
+                            <i class="icon icon-meh"></i>
+                            Ever receive a gift you had no use for? That's a lovely
+                            teapot Mum, thanks.
+                        </p>            
+                        <p>
+                            Now what do I need another tea pot for? It's pretty, but
+                            what I really wanted was a coffee maker.
+                        </p>
+                    </div>          
+                    <div class="span4">
+                        <p class="lead">
+                            <i class="icon icon-smile"></i>
+                            Let's help each other get the gifts we want. Help
+                            make wishlists simply, easy and fun.
+                        </p>
+                        <a class="btn btn-success btn-large" href='#back'>
+                            Back this project! <i class="icon icon-caret-down"></i>
+                            <span>
+                                Fund us to secure a share in profits
+                                or pre-order for early access and bonus features.
+                            </span>
+                        </a>
+                    </div>
+                </div>      
+
             </div>
-          </div>
-          </div>
-          <div class="row-fluid">
-          <div class="span6 offset3 order">
-            <!-- Standard Bootstrap button. -->
-            <!-- http://twitter.github.io/bootstrap/base-css.html#buttons -->
-            <button class="btn btn-success btn-large">Preorder</button>
-          </div>
-          </div>  
-          <div class="row-fluid">
-          <div class="span8 offset2 social">
-            <!-- Social buttons are not included in default Bootstrap. -->
-            <!-- See: http://noizwaves.github.io/bootstrap-social-buttons -->
-            <button class="btn btn-twitter"><i class="icon-twitter"></i> | Twitter</button>
-            <button class="btn btn-facebook"><i class="icon-facebook"></i> | Facebook</button>
-          </div>
-          </div>
-            </div>  
         </div>
-      </div>
 
-      <!-- Beyond this part the marketing copy begins. -->
-      <!-- https://developer.mozilla.org/en-US/docs/Web/CSS/text-align -->
-      <!-- http://twitter.github.io/bootstrap/base-css.html#images -->
-      <!-- http://placehold.it -->
-      <div class="row-fluid section1" id="back">
-        <div class="span5 offset1 asset">
-          <img class="img-polaroid" src="http://placehold.it/480x300" alt="Placeholder">
-        </div>
-        <div class="span5 copy">           
-            <h2>
-                Back this project!
-            </h2>
-           <p>
-               We can build the wishlist you always wanted. We're raising funds
-               to make this happen.
-           </p>
-           <p>
-               Pre-order your Wishlistly account to receive early access
-               to the service as we build it and to get bonus features not
-               open to others.
-           </p>
-           <p>
-               Become a funding partner. Invest in our service and vision
-               for a percentage share in our profits.
-           </p>
-           
-        </div>
-      </div>
+        <!-- Third container for the remaining content  -->
+        <div class="container">    
+            <div class="row-fluid pitch">
+                <div class="span5 offset1 video">
+                    <img class="img-polaroid" src="http://i.imgur.com/Rj9xnsc.png" alt="Placeholder">
+                </div>
 
-      <div class="row-fluid section2">
-        <div class="span5 offset1 copy copy-right">
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
-            porta, dui sagittis hendrerit rutrum, nunc leo tempus nisl, eu
-            mollis justo velit at nunc. Fusce nec egestas sem. Donec
-            fringilla ante lectus, a pellentesque lacus dignissim ac. Sed
-            volutpat lorem ut congue malesuada. In facilisis scelerisque
-            turpis sed lacinia. Donec in orci lectus. Donec auctor semper
-            quam, eget rhoncus purus fringilla id. Phasellus id nibh eu
-            risus ultrices adipiscing.  Lorem ipsum dolor sit amet,
-            consectetur adipiscing elit. Donec porta, dui sagittis hendrerit
-            rutrum, nunc leo tempus nisl, eu mollis justo velit at
-            nunc. Fusce nec egestas sem. Donec fringilla.
-          </p>
-        </div>
-        <div class="span5 asset">
-          <img class="img-polaroid" src="http://placehold.it/480x300" alt="Placeholder">
-        </div>
-      </div>
-
-      <!-- For the FAQ, we introduce a little bit of JS, using the accordion. -->
-      <!-- This brings in jquery.js and bootstrap.js as dependencies. -->
-      <!-- http://twitter.github.io/bootstrap/javascript.html#collapse -->
-      <div class="row-fluid faq">
-          <div class="span10 offset1">
-            <h3>FAQ</h3>
-            <div class="accordion" id="accordion2">
-              <div class="accordion-group">
-                <div class="accordion-heading">
-                  <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseOne">
-                      When will I see Wishlistly come to life?
-                  </a>
+                <!-- We define a new 'actions' div to contain statistics, order, and share buttons.-->
+                <div class="span5 actions">
+                    <div class="row-fluid">
+                        <div class="span8 offset2">
+                            <div class="row-fluid statistics">
+                                <div class="span4">
+                                    <!-- linediv-l and linediv-r give dividing lines that look
+                                    different in horizontal and vertical layouts, illustrating
+                                    media queries. -->
+                                    <div class="linediv-l">
+                                        <h3>1000</h3> <p>backers</p>
+                                    </div>
+                                </div>
+                                <div class="span4">
+                                    <div class="linediv-c">
+                                        <h3>&pound;6000</h3> <p>of &pound;25,000</p>
+                                    </div>
+                                </div>
+                                <div class="span4">
+                                    <div class="linediv-r">
+                                        <h3>10</h3> <p>days left</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row-fluid">
+                            <div class="span10 offset1">
+                                <!-- Bootstrap progress bar -->
+                                <!-- http://twitter.github.io/bootstrap/components.html#progress -->
+                                <div class="thermometer progress active">
+                                    <div class="bar bar-success" style="width: 60%;"></div>
+                                    <div class="bar bar-warning" style="width: 40%;"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row-fluid">
+                            <div class="span6 offset3 order">
+                                <!-- Standard Bootstrap button. -->
+                                <!-- http://twitter.github.io/bootstrap/base-css.html#buttons -->
+                                <button class="btn btn-success btn-large">Preorder</button>
+                            </div>
+                        </div>  
+                        <div class="row-fluid">
+                            <div class="span8 offset2 social">
+                                <!-- Social buttons are not included in default Bootstrap. -->
+                                <!-- See: http://noizwaves.github.io/bootstrap-social-buttons -->
+                                <button class="btn btn-twitter"><i class="icon-twitter"></i> | Twitter</button>
+                                <button class="btn btn-facebook"><i class="icon-facebook"></i> | Facebook</button>
+                            </div>
+                        </div>
+                    </div>  
                 </div>
-                <div id="collapseOne" class="accordion-body collapse">
-                  <div class="accordion-inner">
-                      <p>
-                      Development will start September 9 2013 if our basic
-                      funding goals have been reached.                          
-                      </p>
-                      <p>
-                      A working prototype will be ready within one month and
-                      made available to pre-orders and funding partners.
-                      </p>
-                  </div>
-                </div>
-              </div>
-              <div class="accordion-group">
-                <div class="accordion-heading">
-                  <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseTwo">
-                    What do I get if I pre-order?
-                  </a>
-                </div>
-                <div id="collapseTwo" class="accordion-body collapse">
-                  <div class="accordion-inner">
-                      <ul>
-                          <li>
-                              <p>
-                                  early access to Wistlistly as it is being built
-                              </p>
-                          </li>                          
-                          <li>
-                              <p>
-                                  be the first to receive details on new
-                                  features
-                              </p>
-                          </li>                          
-                          <li>
-                              <p>
-                                  bonus features available only to early
-                                  supporters
-                              </p>
-                          </li>                         
-                      </ul>
-                      
-                  </div>
-                </div>
-              </div>
-              <div class="accordion-group">
-                <div class="accordion-heading">
-                  <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseThree">
-                    How do I benefit from being a funding partner?
-                  </a>
-                </div>
-                <div id="collapseThree" class="accordion-body collapse">
-                  <div class="accordion-inner">
-                      <p>
-                          Secure your share in profits by pledging at little as
-                          &pound;1000 for a 0.1% share in profits.
-                      </p>                      
-                      <p>
-                          Pledge up to &pound;10,000 for a 1% share.
-                      </p>                       
-                  </div>
-                </div>
-              </div>                
             </div>
-          </div>
 
-      </div>
+            <!-- Beyond this part the marketing copy begins. -->
+            <!-- https://developer.mozilla.org/en-US/docs/Web/CSS/text-align -->
+            <!-- http://twitter.github.io/bootstrap/base-css.html#images -->
+            <!-- http://placehold.it -->
+            <div class="row-fluid section1" id="back">
+                <div class="span5 offset1 asset">
+                    <img class="img-polaroid" src="http://placehold.it/480x300" alt="Placeholder">
+                </div>
+                <div class="span5 copy">           
+                    <h2>
+                        Back this project!
+                    </h2>
+                    <p>
+                        We can build the wishlist you always wanted. We're raising funds
+                        to make this happen.
+                    </p>
+                    <p>
+                        Pre-order your Wishlistly account to receive early access
+                        to the service as we build it and to get bonus features not
+                        open to others.
+                    </p>
+                    <p>
+                        Become a funding partner. Invest in our service and vision
+                        for a percentage share in our profits.
+                    </p>
 
-      <!-- Not crucial, but we put this under a CC By-SA 3.0 license. -->
-      <!-- http://creativecommons.org/licenses/ -->
-      <div class="row-fluid footer">
-        <div class="span12">
-          <p>This work is licensed under
-            the <a href="http://creativecommons.org/licenses/by-sa/3.0/">CC
-              By-SA 3.0
-            </a>, without all the cruft that would otherwise be
-            put at the bottom of the page.</p>
-        </div>
-      </div>
-    </div>    
-  </body>
+                </div>
+            </div>
+
+            <div class="row-fluid section2">
+                <div class="span5 offset1 copy copy-right">
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
+                        porta, dui sagittis hendrerit rutrum, nunc leo tempus nisl, eu
+                        mollis justo velit at nunc. Fusce nec egestas sem. Donec
+                        fringilla ante lectus, a pellentesque lacus dignissim ac. Sed
+                        volutpat lorem ut congue malesuada. In facilisis scelerisque
+                        turpis sed lacinia. Donec in orci lectus. Donec auctor semper
+                        quam, eget rhoncus purus fringilla id. Phasellus id nibh eu
+                        risus ultrices adipiscing.  Lorem ipsum dolor sit amet,
+                        consectetur adipiscing elit. Donec porta, dui sagittis hendrerit
+                        rutrum, nunc leo tempus nisl, eu mollis justo velit at
+                        nunc. Fusce nec egestas sem. Donec fringilla.
+                    </p>
+                </div>
+                <div class="span5 asset">
+                    <img class="img-polaroid" src="http://placehold.it/480x300" alt="Placeholder">
+                </div>
+            </div>
+
+            <!-- For the FAQ, we introduce a little bit of JS, using the accordion. -->
+            <!-- This brings in jquery.js and bootstrap.js as dependencies. -->
+            <!-- http://twitter.github.io/bootstrap/javascript.html#collapse -->
+            <div class="row-fluid faq">
+                <div class="span10 offset1">
+                    <h3>FAQ</h3>
+                    <div class="accordion" id="accordion2">
+                        <div class="accordion-group">
+                            <div class="accordion-heading">
+                                <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseOne">
+                                    When will I see Wishlistly come to life?
+                                </a>
+                            </div>
+                            <div id="collapseOne" class="accordion-body collapse">
+                                <div class="accordion-inner">
+                                    <p>
+                                        Development will start September 9 2013 if our basic
+                                        funding goals have been reached.                          
+                                    </p>
+                                    <p>
+                                        A working prototype will be ready within one month and
+                                        made available to pre-orders and funding partners.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-group">
+                            <div class="accordion-heading">
+                                <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseTwo">
+                                    What do I get if I pre-order?
+                                </a>
+                            </div>
+                            <div id="collapseTwo" class="accordion-body collapse">
+                                <div class="accordion-inner">
+                                    <ul>
+                                        <li>
+                                            <p>
+                                                early access to Wistlistly as it is being built
+                                            </p>
+                                        </li>                          
+                                        <li>
+                                            <p>
+                                                be the first to receive details on new
+                                                features
+                                            </p>
+                                        </li>                          
+                                        <li>
+                                            <p>
+                                                bonus features available only to early
+                                                supporters
+                                            </p>
+                                        </li>                         
+                                    </ul>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-group">
+                            <div class="accordion-heading">
+                                <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseThree">
+                                    How do I benefit from being a funding partner?
+                                </a>
+                            </div>
+                            <div id="collapseThree" class="accordion-body collapse">
+                                <div class="accordion-inner">
+                                    <p>
+                                        Secure your share in profits by pledging at little as
+                                        &pound;1000 for a 0.1% share in profits.
+                                    </p>                      
+                                    <p>
+                                        Pledge up to &pound;10,000 for a 1% share.
+                                    </p>                       
+                                </div>
+                            </div>
+                        </div>                
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Not crucial, but we put this under a CC By-SA 3.0 license. -->
+            <!-- http://creativecommons.org/licenses/ -->
+            <div class="row-fluid footer">
+                <div class="span12">
+                    <p>This work is licensed under
+                        the <a href="http://creativecommons.org/licenses/by-sa/3.0/">CC
+                            By-SA 3.0
+                        </a>, without all the cruft that would otherwise be
+                        put at the bottom of the page.</p>
+                </div>
+            </div>
+        </div>    
+    </body>
 </html>
 
